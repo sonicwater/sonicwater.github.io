@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -94,16 +94,18 @@
 
 
 
-<meta name="description" content="A castaway Engineer of front-end.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sonic&#39;s Blog">
-<meta property="og:url" content="https://github.com/sonicwater/index.html">
+<meta name="description" content="JavaScript 数据类型分基本数据类型， 和引用数据类型。(1) 基本数据类型包括: Number, String, Boolean, null, undefined  code :12345678910111213var a = 1;var b = &quot;1&quot;;var c = true;var d = null;var e = undefined; // ← 基本没有人这么赋值var f;co">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(一) JavaScript 数据类型，传值和传址">
+<meta property="og:url" content="https://github.com/sonicwater/2016/04/29/(一) JavaScript 数据类型，传值和传址/index.html">
 <meta property="og:site_name" content="Sonic&#39;s Blog">
-<meta property="og:description" content="A castaway Engineer of front-end.">
+<meta property="og:description" content="JavaScript 数据类型分基本数据类型， 和引用数据类型。(1) 基本数据类型包括: Number, String, Boolean, null, undefined  code :12345678910111213var a = 1;var b = &quot;1&quot;;var c = true;var d = null;var e = undefined; // ← 基本没有人这么赋值var f;co">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-06T16:29:29.220Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sonic&#39;s Blog">
-<meta name="twitter:description" content="A castaway Engineer of front-end.">
+<meta name="twitter:title" content="(一) JavaScript 数据类型，传值和传址">
+<meta name="twitter:description" content="JavaScript 数据类型分基本数据类型， 和引用数据类型。(1) 基本数据类型包括: Number, String, Boolean, null, undefined  code :12345678910111213var a = 1;var b = &quot;1&quot;;var c = true;var d = null;var e = undefined; // ← 基本没有人这么赋值var f;co">
 
 
 
@@ -132,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="https://github.com/sonicwater/"/>
+  <link rel="canonical" href="https://github.com/sonicwater/2016/04/29/(一) JavaScript 数据类型，传值和传址/"/>
 
 
 
 
 
-  <title>Sonic's Blog</title>
+  <title>(一) JavaScript 数据类型，传值和传址 | Sonic's Blog</title>
   
 
 
@@ -163,9 +165,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -268,9 +268,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -300,9 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/04/29/(一) JavaScript 数据类型，传值和传址/" itemprop="url">(一) JavaScript 数据类型，传值和传址</a></h1>
+          <h1 class="post-title" itemprop="name headline">(一) JavaScript 数据类型，传值和传址</h1>
         
 
         <div class="post-meta">
@@ -374,9 +372,7 @@
       
 
       
-        
-          
-            <p>JavaScript 数据类型分<strong><font color="Crimson">基本数据类型</font></strong>， 和<strong><font color="Crimson">引用数据类型</font></strong>。<br>(1) <strong><font color="Crimson">基本数据类型</font></strong>包括: Number, String, Boolean, null, undefined</p>
+        <p>JavaScript 数据类型分<strong><font color="Crimson">基本数据类型</font></strong>， 和<strong><font color="Crimson">引用数据类型</font></strong>。<br>(1) <strong><font color="Crimson">基本数据类型</font></strong>包括: Number, String, Boolean, null, undefined</p>
 <p><font color="DarkSalmon"><i class="fa fa-code"></i> code :</font><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="string">"1"</span>;</span><br><span class="line"><span class="keyword">var</span> c = <span class="literal">true</span>;</span><br><span class="line"><span class="keyword">var</span> d = <span class="literal">null</span>;</span><br><span class="line"><span class="keyword">var</span> e = <span class="literal">undefined</span>; <span class="comment">// ← 基本没有人这么赋值</span></span><br><span class="line"><span class="keyword">var</span> f;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(a));	 <span class="comment">//[object Number]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(b));	 <span class="comment">//[object String]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(c));	 <span class="comment">//[object Boolean]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(d));	 <span class="comment">//[object Null]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(e));	 <span class="comment">//[object Undefined]</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(f));	 <span class="comment">//[object Undefined]</span></span><br></pre></td></tr></table></figure></p>
 <blockquote>
 <p><font color="FireBrick"><i class="fa fa-question-circle-o"></i></font> <em><font color="SlateBlue">Object.prototype.toString.call()</font>是检测数据类型的一种方式</em></p>
@@ -408,8 +404,6 @@
 </ol>
 <p><font color="DarkSalmon"><i class="fa fa-code"></i> code :</font><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();    <span class="comment">//创建一个对象 obj</span></span><br><span class="line">obj.name = <span class="string">"sonic"</span>;    <span class="comment">//增加一个属性name</span></span><br><span class="line">obj.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  <span class="comment">//增加一个方法 sayName</span></span><br><span class="line">	<span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</span><br><span class="line">&#125;</span><br><span class="line">obj.sayName();    <span class="comment">//通关对象 obj 调用 sayName 方法输出 "sonic"sayName</span></span><br><span class="line"></span><br><span class="line">obj.name = <span class="string">"jack"</span>;    <span class="comment">//修改 name 属性的值</span></span><br><span class="line">obj.sayName();   <span class="comment">// jack</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">delete</span> obj.name;  <span class="comment">//用 delete 操作符删除obj的 name 属性</span></span><br><span class="line">obj.sayName();   <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure></p>
 
-          
-        
       
     </div>
     
@@ -424,16 +418,30 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"><i class="fa fa-tag"></i> JavaScript</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
       <div>
+        
+          <div>
+    
+        <div style="text-align:center;color: #999;font-size:14px;margin-top:10px;">
+            ------------- <i class="fa fa-coffee" aria-hidden="true"></i> ending -------------
+        </div>
+    
+</div>
         
       </div>
     </footer>
@@ -444,10 +452,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -455,6 +464,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -673,10 +686,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
